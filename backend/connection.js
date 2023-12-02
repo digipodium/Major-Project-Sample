@@ -1,11 +1,14 @@
-const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-dotenv.config();
 
-// console.log(process.env.DB_URL);
-mongoose.connect(process.env.DB_URL)
+const url = "mongodb+srv://mmm:mmm@cluster0.gvyon.mongodb.net/mydatabase234?retryWrites=true&w=majority";
+
+mongoose.connect(url)
 .then((result) => {
     console.log('database connected');
-}).catch((err) => {
+    // console.log(result);
+})
+.catch((err) => {
     console.log(err);
 });
+
+module.exports = mongoose;
