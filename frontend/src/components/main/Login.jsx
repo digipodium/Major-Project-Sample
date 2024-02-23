@@ -76,6 +76,8 @@ const Login = () => {
 
               <button className="btn btn-primary w-100 mt-5">Submit</button>
             </form>
+
+            <a href="https://github.com/login/oauth/authorize?client_id=af274aebeef6ccbf2260&client_secret=99fff993d53bd3be9d373a54cb49d758631bb174scope: 'user:email&state=from" className="btn btn-dark">Login with Github</a>
           </div>
         </div>
       </div>

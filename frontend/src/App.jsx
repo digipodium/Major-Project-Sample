@@ -5,6 +5,7 @@ import Home from './components/main/Home';
 import Login from './components/main/Login';
 import User from './components/user';
 import Profile from './components/user/Profile';
+import ResetPassword from './components/main/ResetPassword';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <Route path='main' element={<Main />} >
               <Route path='home' element={<Home />} /> 
               <Route path='login' element={<Login />} /> 
+              <Route path='resetpassword' element={<ResetPassword />} /> 
             </Route>
 
             <Route path='user' element={<User />} >

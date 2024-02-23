@@ -52,7 +52,6 @@ router.post("/authenticate", (req, res) => {
   .then((result) => {
       
     if(result){
-
     
       const payload = { _id : result._id, email : result.email, role : result.role };
 
